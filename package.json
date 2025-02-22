@@ -1,0 +1,23 @@
+{
+  "name": "github-activity",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LiderB/github-activity.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LiderB/github-activity/issues"
+  },
+  "homepage": "https://github.com/LiderB/github-activity#readme",
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
+}
