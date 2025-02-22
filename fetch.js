@@ -1,15 +1,18 @@
+
+
 async function getEvents(username) {
     const url = `https://api.github.com/users/${username}/events`;
 
     try {
         const resp = await fetch(url);
 
-        if(resp.status > 299 ) {
+        if(resp.status > 399 ) {
             throw Error(`respond status: ${resp.status}, message: ${resp.message}`);
         }
         
         const respBody = await resp.text();
-        return respBody
+        const eventArray = JSON.parse(respBody);
+        return eventArray;
 
     } catch (error) {
         console.log(`${error.message}${url}`);
@@ -18,6 +21,9 @@ async function getEvents(username) {
 
 
 }
+
+
+
 
 module.exports = {
     getEvents
